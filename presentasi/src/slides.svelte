@@ -8,6 +8,7 @@
 		Code,
 	} from '@components'
 
+	import CyberIcon from './assets/logo.webp'
 	import VSCodeIcon from './assets/vscode.png'
 	import HTMLIcon from './assets/html.png'
 	import DiscordIcon from './assets/discord.png'
@@ -30,25 +31,29 @@
 	import VSCodeNewFile from './assets/vscode/create-file.png'
 
 	import DemoTitle from './assets/demo/title.png'
+	import DemoTable from './assets/demo/table.png'
 </script>
 
 <Presentation>
 	<Vertical>
 		<Slide animate>
 			<Layout>
-				<p class="font-bold">Pengenalan Visual Studio Code & Dasar HTML</p>
+				<img src={CyberIcon} alt="" class="w-72" />
 			</Layout>
 		</Slide>
 
 		<Slide animate>
 			<Layout>
-				<p class="font-bold">Pengenalan Visual Studio Code & Dasar HTML</p>
+				<img src={CyberIcon} alt="" class="w-52 my-4" />
+				<p class="font-bold text-5xl">
+					Pengenalan Visual Studio Code & Dasar HTML
+				</p>
 				<div class="flex justify-center gap-2 w-full">
 					<a href="https://en.wikipedia.org/wiki/HTML">
-						<img src={HTMLIcon} alt="HTML" />
+						<img src={HTMLIcon} alt="HTML" class="w-32" />
 					</a>
 					<a href="https://code.visualstudio.com/">
-						<img src={VSCodeIcon} alt="VSCode" />
+						<img src={VSCodeIcon} alt="VSCode" class="w-32" />
 					</a>
 				</div>
 			</Layout>
@@ -99,6 +104,14 @@
 				<h2 class="font-mono font-bold text-5xl">Apa yang kita buat</h2>
 			</Layout>
 		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<h2 class="font-mono font-bold text-5xl my-8">Apa yang kita buat</h2>
+				<p>Halaman web yang berisikan daftar suatu produk</p>
+			</Layout>
+		</Slide>
+
 		<Slide animate>
 			<Layout>
 				<h2 class="font-mono font-bold text-5xl">Apa yang kita buat</h2>
@@ -310,7 +323,8 @@
 					Secara sederhana merupakan block utama dalam pembuatan suatu web, <span
 						class="italic font-bold">Elemen</span
 					>
-					dapat memiliki elemen lagi didalamnya, pasti mempunyai
+					dapat memiliki <span class="italic font-bold">elemen</span> lagi
+					didalamnya, pasti mempunyai
 					<span class="italic font-bold">tag pembuka</span>
 					dan hampir semua memakai
 					<span class="italic font-bold">tag penutup</span>
@@ -342,6 +356,12 @@
 		<Slide animate>
 			<Layout>
 				<h2 class="text-5xl">Element Judul Tab</h2>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<h2 class="text-5xl">Element Judul Tab</h2>
 
 				<p class="text-3xl">
 					Suatu elemen yang digunakan untuk memberi nama pada tab
@@ -351,7 +371,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul Tab</h2>
 				<Code lang="html">
 					{`<title>Daftar Manga</title>`}
 				</Code>
@@ -366,6 +385,12 @@
 	</Vertical>
 
 	<Vertical>
+		<Slide animate>
+			<Layout>
+				<h2 class="text-5xl">Element Judul / Heading</h2>
+			</Layout>
+		</Slide>
+
 		<Slide animate>
 			<Layout>
 				<h2 class="text-5xl">Element Judul / Heading</h2>
@@ -394,7 +419,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h1>Halo</h1>
@@ -405,7 +429,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h1>Halo</h1>
@@ -420,7 +443,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h2>Halo</h2>
@@ -431,7 +453,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h2>Halo</h2>
@@ -446,7 +467,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h3>Halo</h3>
@@ -457,7 +477,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h3>Halo</h3>
@@ -472,7 +491,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h4>Halo</h4>
@@ -483,7 +501,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h4>Halo</h4>
@@ -498,7 +515,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h5>Halo</h5>
@@ -509,7 +525,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h5>Halo</h5>
@@ -524,7 +539,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h6>Halo</h6>
@@ -535,7 +549,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Judul / Heading</h2>
 				<Code lang="html">
 					{`
 					<h6>Halo</h6>
@@ -552,13 +565,22 @@
 	<Vertical>
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Paragraf</h2>
+				<h2 class="text-5xl">Element Paragraph</h2>
 			</Layout>
 		</Slide>
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Paragraf</h2>
+				<h2 class="text-5xl">Element Paragraph</h2>
+
+				<p class="text-3xl">
+					Suatu elemen yang digunakan untuk membuat paragraf
+				</p>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
 				<Code lang="html" lines="|1,6|2-5|8,10|9">
 					{`
 					<p>
@@ -595,7 +617,13 @@
 	<Vertical>
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Tengah</h2>
+				<h2 class="text-5xl">Element center</h2>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<h2 class="text-5xl">Element center</h2>
 
 				<p class="text-3xl">
 					Suatu elemen yang digunakan untuk menengahkan suatu element
@@ -605,24 +633,6 @@
 
 		<Slide animate>
 			<Layout>
-				<h2 class="text-5xl">Element Tengah</h2>
-
-				<Code lang="html" lines="|1,5|2-4">
-					{`
-					<center>
-						<h1>
-							AAAAAA
-						</h1>
-					</center>
-					`}
-				</Code>
-			</Layout>
-		</Slide>
-
-		<Slide animate>
-			<Layout>
-				<h2 class="text-5xl">Element Tengah</h2>
-
 				<Code lang="html" lines="|1,5|2-4">
 					{`
 					<center>
@@ -678,6 +688,67 @@
 					</html>
 					`}
 				</Code>
+			</Layout>
+		</Slide>
+	</Vertical>
+
+	<Vertical>
+		<Slide animate>
+			<Layout>
+				<h2 class="text-5xl">Elemen table</h2>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<h2 class="text-5xl">Elemen table</h2>
+
+				<p class="text-3xl">
+					Suatu elemen yang digunakan untuk membuat dan merepresentasikan tabel
+				</p>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<Code
+					lang="html"
+					lines="|1|18|2,7|3,6|4-5|8,17|9,12,13,16|10-11,14-15"
+					class="w-screen"
+				>
+					{`
+					<table border="1">
+						<thead>
+							<tr>
+								<td>No</td>
+								<td>Nama</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Agus</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Yanto</td>
+							</tr>
+						</tbody>
+					</table>
+					`}
+				</Code>
+			</Layout>
+		</Slide>
+
+		<Slide animate>
+			<Layout>
+				<img src={DemoTable} alt="" class="w-[50%]" />
+			</Layout>
+		</Slide>
+
+		<Slide>
+			<Layout>
+				<h2 class="text-5xl">Memberi warna baris tabel</h2>
 			</Layout>
 		</Slide>
 	</Vertical>
