@@ -3,107 +3,168 @@
 
 <head>
     <title>Daftar Manga</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <center>
-        <h1>Daftar Manga</h1>
-    </center>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut impedit animi eligendi neque distinctio tempora
-        corporis provident nulla repellendus ad ab similique, suscipit accusamus. Commodi tenetur obcaecati earum
-        perspiciatis cupiditate!
+    <nav class="navbar">
+        <h2>Webku</h2>
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <li>
+                    <a href="./index.html" class="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-link">Contact</a>
+                </li>
+            </ul>
 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem sint perspiciatis necessitatibus
-        animi rem excepturi, eum modi sit corporis, vero est non iure inventore consequuntur, officia pariatur! Commodi,
-        neque!
-    </p>
-    <table border="1">
-        <thead bgcolor="#B7B7B7">
-            <tr>
-                <td width="50">
-                    <center>
-                        No
-                    </center>
-                </td>
-                <td width="300">
-                    Nama
-                </td>
-                <td width="300">
-                    Genre
-                </td>
-                <td width="100">
-                    <center>
-                        Link
-                    </center>
-                </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <center>
-                        1
-                    </center>
-                </td>
-                <td>
-                    Touhou Sparrow Midnight Dinner
-                </td>
-                <td>
-                    Fantasy, Slice of Life, Vampire
-                </td>
-                <td>
-                    <a href="./detail-touhou-sparrow.html">
-                        <i>
-                            Detail
-                        </i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <center>
-                        2
-                    </center>
-                </td>
-                <td>
-                    Touhou Suzunaan
-                </td>
-                <td>
-                    Fantasy, Supernatural
-                </td>
-                <td>
-                    <a href="./detail-touhou-suzunaan.html">
-                        <i>
-                            Detail
-                        </i>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <center>
-                        3
-                    </center>
-                </td>
-                <td>
-                    Sousou no Friren
-                </td>
-                <td>
-                    Fantasy, Slice of Life
-                </td>
-                <td>
-                    <a href="./detail-sousou-no-friren.html">
-                        <i>
-                            Detail
-                        </i>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+            <ul class="navbar-list">
+                <li>
+                    <a href="#" class="navbar-link button">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <p>Orang Sakit Jiwa &copy; 2023</p>
+    <div class="container justify-content-center align-items-center">
+        <center>
+            <h1>Daftar Manga</h1>
+        </center>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut impedit animi eligendi neque distinctio
+            tempora
+            corporis provident nulla repellendus ad ab similique, suscipit accusamus. Commodi tenetur obcaecati earum
+            perspiciatis cupiditate!
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem sint perspiciatis necessitatibus
+            animi rem excepturi, eum modi sit corporis, vero est non iure inventore consequuntur, officia pariatur!
+            Commodi,
+            neque!
+        </p>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./cover-touhou-suzunaan.jpg" alt="Cover">
+            </div>
+            <div class="card-content">
+                <header>
+                    <a href="./detail-touhou-suzunaan.html" class="card-link">
+                        <h2>Touhou Suzunaan</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam voluptatibus modi eos et
+                        nesciunt
+                        odit! In nobis qui nam unde adipisci nulla ad inventore aliquid! Animi quas in suscipit.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Fantasy
+                        </li>
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Supernatural
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./cover-sousou-no-friren.jpg" alt="Cover">
+            </div>
+            <div class="card-content">
+                <header>
+                    <a href="./detail-sousou-no-friren.html" class="card-link">
+                        <h2>Sousou no Friren</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam voluptatibus modi eos et
+                        nesciunt
+                        odit! In nobis qui nam unde adipisci nulla ad inventore aliquid! Animi quas in suscipit.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Fantasy
+                        </li>
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Slice of Life
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="./cover-touhou-sparrow-midnight-dinner.jpg" alt="Cover">
+            </div>
+            <div class="card-content">
+                <header>
+                    <a href="./detail-touhou-sparrow.html" class="card-link">
+                        <h2>Touhou Sparrow Midnight Dinner</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam voluptatibus modi eos et
+                        nesciunt
+                        odit! In nobis qui nam unde adipisci nulla ad inventore aliquid! Animi quas in suscipit.
+                    </p>
+
+                    <ul class="tag-list">
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Fantasy
+                        </li>
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Slice of Life
+                        </li>
+
+                        <li class="tag">
+                            <svg class="tag-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            Vampire
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>Orang Sakit Jiwa &copy; 2023</p>
+    </footer>
 </body>
 
 </html>
